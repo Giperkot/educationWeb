@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Knowledge</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]>
+		<script src="style/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="style/css/main.css" />
+		<!--[if lte IE 8]>
+        <link rel="stylesheet" href="style/css/ie8.css"/><![endif]-->
+		<!--[if lte IE 9]>
+        <link rel="stylesheet" href="style/css/ie9.css"/><![endif]-->
+        <link rel="stylesheet" href="style/css/bootstrap.css"/>
+        <link rel="stylesheet" href="style/css/another.css"/>
+
+	</head>
+	<body>
+
+		<!-- Nav -->
+			<nav id="nav" class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+
+                    <div class="container flex_row">
+                        <div class="logo">
+                            FindYourMentor
+                        </div>
+                        <ul class="the_menu">
+                            <li><a href="#top">Mentors</a></li>
+                            <li><a href="#work">Knowledge base</a></li>
+                            <!--<li><a href="#portfolio">Подать заявку</a></li>-->
+                            <!--<li><a href="#contact">Ещё меню</a></li>-->
+                        </ul>
+                        <div class="language_panel">
+                            <select onchange=utils.changeLanguage>
+                                <option  value="RU">Russian</option>
+                                <option selected value="EN">English</option>
+                            </select>
+                        </div>
+                    </div>
+			</nav>
+
+		<!--  -->
+        <div class="container column_type page_switcher">
+
+
+        </div>
+		<!--  -->
+
+        <script type="text/template" id="CMainTemplate">
+
+            <div id="DIV_1" class="margin_top_98">
+                <div id="DIV_2">
+                    <span id="SPAN_3">Education plan</span>
+                    <button type="button" id="BUTTON_4">
+                        Resume Education
+                    </button>
+                </div>
+            </div>
+
+            <div class="specialization_list">
+
+            </div>
+        </script>
+
+        <script type="text/template" id="CSpecializationTemplate">
+
+            <%for (var i = 0; i < data.specializationList.length; i++) {%>
+            <div id="DIV_1" class="open_course" data-course="<%=data.specializationList[i].id%>">
+                <div id="DIV_2">
+                    <div id="DIV_3">
+                        <a href="/module/7" id="A_4"></a>
+                        <div id="DIV_5">
+                            <div id="DIV_6">
+                                <div id="DIV_7">
+                                    <div id="DIV_8">
+                                        .0<%=i%>
+                                    </div>
+                                </div>
+                                <div id="DIV_9">
+                                    <div id="DIV_10">
+                                        <div id="DIV_11">
+                                            <div id="DIV_12">
+                                                <div id="DIV_13">
+                                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTZweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMTYgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+bGVzc29uc19ibGFjazwvdGl0bGU+CiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4KICAgIDxkZWZzPjwvZGVmcz4KICAgIDxnIGlkPSJVSS1LSVQiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgICAgICAgPGcgaWQ9ImJjLXVpLWtpdCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE4NDQuMDAwMDAwLCAtNDA4LjAwMDAwMCkiIHN0cm9rZT0iIzVDNkQ2RSIgc3Ryb2tlLXdpZHRoPSIyIj4KICAgICAgICAgICAgPGcgaWQ9Imxlc3NvbnMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE4NDQuMDAwMDAwLCA0MDguMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTUsNSBMMTUsMTkgTDgsMTMuMTY5MDk4NiBMMSwxOSBMMSw1IEwxLDQgQzEsMi4zNDMxNDU3NSAyLjM0MzE0NTc1LDEgNCwxIEwxMiwxIEMxMy42NTY4NTQyLDEgMTUsMi4zNDMxNDU3NSAxNSw0IEwxNSw1IFoiIGlkPSJDb21iaW5lZC1TaGFwZSI+PC9wYXRoPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4=" height="20" id="IMG_14" alt='' />
+                                                    <span id="SPAN_15">4 из 4 уроков</span>
+                                                </div>
+                                                <div id="DIV_16">
+                                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Y2hlY2tfZ3JlZW48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY2Ni4wMDAwMDAsIC00NDIuMDAwMDAwKSIgZmlsbD0iIzczQTQ0MSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2NoZWNrX2NpcmNsZV9ibGFja18yNHB4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjY2LjAwMDAwMCwgNDQyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLDAgQzQuNDgsMCAwLDQuNDggMCwxMCBDMCwxNS41MiA0LjQ4LDIwIDEwLDIwIEMxNS41MiwyMCAyMCwxNS41MiAyMCwxMCBDMjAsNC40OCAxNS41MiwwIDEwLDAgWiBNOSwxNC40MiBMNCw5LjQyIEw1LjQxLDguMDEgTDksMTEuNTkgTDE0LjU5LDYgTDE2LDcuNDIgTDksMTQuNDIgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" height="20" id="IMG_17" alt='' />
+                                                    <span id="SPAN_18">Пройден</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="DIV_19">
+                                            <div id="DIV_20">
+                                                <div id="DIV_21">
+                                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+YWxhcm1fYmxhY2s8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc5OC4wMDAwMDAsIC0zNzQuMDAwMDAwKSIgZmlsbD0iIzVDNkQ2RSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2FsYXJtX2JsYWNrXzI0cHgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3OTguMDAwMDAwLCAzNzMuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsNC43MiBMMTUuNCwwLjg2IEwxNC4xMSwyLjM5IEwxOC43MSw2LjI1IEwyMCw0LjcyIFogTTUuODgsMi4zOSBMNC42LDAuODYgTDAsNC43MSBMMS4yOSw2LjI0IEw1Ljg4LDIuMzkgWiBNMTAuNSw3IEw5LDcgTDksMTMgTDEzLjc1LDE1Ljg1IEwxNC41LDE0LjYyIEwxMC41LDEyLjI1IEwxMC41LDcgWiBNMTAsMyBDNS4wMywzIDEsNy4wMyAxLDEyIEMxLDE2Ljk3IDUuMDIsMjEgMTAsMjEgQzE0Ljk3LDIxIDE5LDE2Ljk3IDE5LDEyIEMxOSw3LjAzIDE0Ljk3LDMgMTAsMyBaIE0xMCwxOSBDNi4xMywxOSAzLDE1Ljg3IDMsMTIgQzMsOC4xMyA2LjEzLDUgMTAsNSBDMTMuODcsNSAxNyw4LjEzIDE3LDEyIEMxNywxNS44NyAxMy44NywxOSAxMCwxOSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" height="20" id="IMG_22" alt='' />
+                                                    <span id="SPAN_23"><%=data.specializationList[i].timing%> мин</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span id="SPAN_24"><%=data.specializationList[i].title%></span><span id="SPAN_25"><%=data.specializationList[i].description%></span>
+                                    <div id="DIV_26">
+                                        <div id="DIV_27">
+                                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+YWxhcm1fYmxhY2s8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc5OC4wMDAwMDAsIC0zNzQuMDAwMDAwKSIgZmlsbD0iIzVDNkQ2RSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2FsYXJtX2JsYWNrXzI0cHgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3OTguMDAwMDAwLCAzNzMuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsNC43MiBMMTUuNCwwLjg2IEwxNC4xMSwyLjM5IEwxOC43MSw2LjI1IEwyMCw0LjcyIFogTTUuODgsMi4zOSBMNC42LDAuODYgTDAsNC43MSBMMS4yOSw2LjI0IEw1Ljg4LDIuMzkgWiBNMTAuNSw3IEw5LDcgTDksMTMgTDEzLjc1LDE1Ljg1IEwxNC41LDE0LjYyIEwxMC41LDEyLjI1IEwxMC41LDcgWiBNMTAsMyBDNS4wMywzIDEsNy4wMyAxLDEyIEMxLDE2Ljk3IDUuMDIsMjEgMTAsMjEgQzE0Ljk3LDIxIDE5LDE2Ljk3IDE5LDEyIEMxOSw3LjAzIDE0Ljk3LDMgMTAsMyBaIE0xMCwxOSBDNi4xMywxOSAzLDE1Ljg3IDMsMTIgQzMsOC4xMyA2LjEzLDUgMTAsNSBDMTMuODcsNSAxNyw4LjEzIDE3LDEyIEMxNywxNS44NyAxMy44NywxOSAxMCwxOSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" height="20" id="IMG_28" alt='' /><span id="SPAN_29"><%=data.specializationList[i].timing%> мин</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+        </script>
+
+        <script type="text/template" id="CSpecializationMainTemplate">
+            <%
+                data = data.specializationInfo;
+            %>
+            <div id="spec_DIV_1">
+                <div id="spec_DIV_2">
+                    <div id="spec_DIV_3">
+                        <div id="spec_DIV_4">
+                            <div id="spec_DIV_5">
+                                <div id="spec_DIV_6">
+                                    .01
+                                </div>
+                            </div>
+                            <div id="spec_DIV_7">
+                                <div id="spec_DIV_8">
+                                    <div id="spec_DIV_9">
+                                        <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Y2hlY2tfZ3JlZW48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY2Ni4wMDAwMDAsIC00NDIuMDAwMDAwKSIgZmlsbD0iIzczQTQ0MSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2NoZWNrX2NpcmNsZV9ibGFja18yNHB4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjY2LjAwMDAwMCwgNDQyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLDAgQzQuNDgsMCAwLDQuNDggMCwxMCBDMCwxNS41MiA0LjQ4LDIwIDEwLDIwIEMxNS41MiwyMCAyMCwxNS41MiAyMCwxMCBDMjAsNC40OCAxNS41MiwwIDEwLDAgWiBNOSwxNC40MiBMNCw5LjQyIEw1LjQxLDguMDEgTDksMTEuNTkgTDE0LjU5LDYgTDE2LDcuNDIgTDksMTQuNDIgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" height="20" id="spec_IMG_10" alt='' /><span id="spec_SPAN_11">Пройден</span>
+                                    </div>
+                                    <div id="spec_DIV_12">
+                                    </div>
+                                    <div id="spec_DIV_13">
+                                        <img src="../../../images/alarm_black.svg" height="24" id="spec_IMG_14" alt='' />
+                                        <span id="spec_SPAN_15"><%=data.specializationDto.timing%> мин</span>
+                                    </div>
+                                </div><span id="spec_SPAN_16"><%=data.specializationDto.title%></span>
+                                <div id="spec_DIV_17">
+                                    <div id="spec_DIV_18">
+                                        <div id="spec_DIV_19">
+                                            <div id="spec_DIV_20">
+                                                <div id="spec_DIV_21">
+                                                    <div id="spec_DIV_22">
+                                                        <svg id="spec_svg_23">
+                                                            <circle id="spec_circle_24">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="spec_DIV_25">
+                                                <div id="spec_DIV_26">
+                                                    <svg id="spec_svg_27">
+                                                        <circle id="spec_circle_28">
+                                                        </circle>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="spec_DIV_29">
+                                            <div id="spec_DIV_30">
+                                                <div id="spec_DIV_31">
+                                                    <span id="spec_SPAN_32">4</span><span id="spec_SPAN_33">из</span><span id="spec_SPAN_34">4</span>
+                                                </div>
+                                            </div>
+                                            <h6 id="spec_H6_35">
+                                                <span id="spec_SPAN_36">Уроков пройдено</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div id="spec_DIV_37">
+                                        <div id="spec_DIV_38">
+                                            <div id="spec_DIV_39">
+                                                <div id="spec_DIV_40">
+                                                    <div id="spec_DIV_41">
+                                                        <svg id="spec_svg_42">
+                                                            <circle id="spec_circle_43">
+                                                            </circle>
+                                                        </svg>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="spec_DIV_44">
+                                                <div id="spec_DIV_45">
+                                                    <svg id="spec_svg_46">
+                                                        <circle id="spec_circle_47">
+                                                        </circle>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="spec_DIV_48">
+                                            <div id="spec_DIV_49">
+                                                <div id="spec_DIV_50">
+                                                    <span id="spec_SPAN_51">8</span><span id="spec_SPAN_52">из</span><span id="spec_SPAN_53">8</span>
+                                                </div>
+                                            </div>
+                                            <h6 id="spec_H6_54">
+                                                <span id="spec_SPAN_55">Баллов получено</span>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="spec_DIV_56">
+                            <span id="spec_SPAN_57">
+                                <%=data.specializationDto.description%>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container width_946 flex_column courses_list">
+
+            </div>
+
+        </script>
+
+        <script type="text/template" id="CCoursesListTemplate">
+
+            <%
+            data = data.specializationInfo;
+            for (var i = 0; i < data.courseDtoList.length; i++) {
+            var course = data.courseDtoList[i];
+            console.log(course);
+            %>
+            <div id="course_list_DIV_1" class="open_course" data-course="<%=course.id%>">
+                <div id="course_list_DIV_2">
+                    <div id="course_list_DIV_3">
+                        <a href="/lesson/6" id="course_list_A_4"></a>
+                        <div id="course_list_DIV_5">
+                            <div id="course_list_DIV_6">
+                                <div id="course_list_DIV_7">
+                                    <img src="../../../images/lessons_black.svg" height="24" id="course_list_IMG_8" alt='' /><span id="course_list_SPAN_9">1 урок</span>
+                                </div>
+                                <div id="course_list_DIV_10">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Y2hlY2tfZ3JlZW48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY2Ni4wMDAwMDAsIC00NDIuMDAwMDAwKSIgZmlsbD0iIzczQTQ0MSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2NoZWNrX2NpcmNsZV9ibGFja18yNHB4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjY2LjAwMDAwMCwgNDQyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLDAgQzQuNDgsMCAwLDQuNDggMCwxMCBDMCwxNS41MiA0LjQ4LDIwIDEwLDIwIEMxNS41MiwyMCAyMCwxNS41MiAyMCwxMCBDMjAsNC40OCAxNS41MiwwIDEwLDAgWiBNOSwxNC40MiBMNCw5LjQyIEw1LjQxLDguMDEgTDksMTEuNTkgTDE0LjU5LDYgTDE2LDcuNDIgTDksMTQuNDIgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" height="20" id="course_list_IMG_11" alt='' />
+                                    <span id="course_list_SPAN_12">Пройден</span>
+                                </div>
+                                <div id="course_list_DIV_13">
+                                </div>
+                                <div id="course_list_DIV_14">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+YWxhcm1fYmxhY2s8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTc5OC4wMDAwMDAsIC0zNzQuMDAwMDAwKSIgZmlsbD0iIzVDNkQ2RSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2FsYXJtX2JsYWNrXzI0cHgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE3OTguMDAwMDAwLCAzNzMuMDAwMDAwKSI+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMjAsNC43MiBMMTUuNCwwLjg2IEwxNC4xMSwyLjM5IEwxOC43MSw2LjI1IEwyMCw0LjcyIFogTTUuODgsMi4zOSBMNC42LDAuODYgTDAsNC43MSBMMS4yOSw2LjI0IEw1Ljg4LDIuMzkgWiBNMTAuNSw3IEw5LDcgTDksMTMgTDEzLjc1LDE1Ljg1IEwxNC41LDE0LjYyIEwxMC41LDEyLjI1IEwxMC41LDcgWiBNMTAsMyBDNS4wMywzIDEsNy4wMyAxLDEyIEMxLDE2Ljk3IDUuMDIsMjEgMTAsMjEgQzE0Ljk3LDIxIDE5LDE2Ljk3IDE5LDEyIEMxOSw3LjAzIDE0Ljk3LDMgMTAsMyBaIE0xMCwxOSBDNi4xMywxOSAzLDE1Ljg3IDMsMTIgQzMsOC4xMyA2LjEzLDUgMTAsNSBDMTMuODcsNSAxNyw4LjEzIDE3LDEyIEMxNywxNS44NyAxMy44NywxOSAxMCwxOSBaIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" height="20" id="course_list_IMG_15" alt='' />
+                                    <span id="course_list_SPAN_16"><%=course.timing%> мин</span>
+                                </div>
+                            </div>
+                            <h2 id="course_list_H2_17">
+                                <span id="course_list_SPAN_18"><%=course.title%></span>
+                            </h2>
+                            <div id="course_list_DIV_19">
+                                <div id="course_list_DIV_20">
+                                    <div id="course_list_DIV_21">
+                                        <div id="course_list_DIV_22">
+                                            <div id="course_list_DIV_23">
+                                                <div id="course_list_DIV_24">
+                                                    <svg id="course_list_svg_25">
+                                                        <circle id="course_list_circle_26">
+                                                        </circle>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="course_list_DIV_27">
+                                            <div id="course_list_DIV_28">
+                                                <svg id="course_list_svg_29">
+                                                    <circle id="course_list_circle_30">
+                                                    </circle>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="course_list_DIV_31">
+                                        <div id="course_list_DIV_32">
+                                            <div id="course_list_DIV_33">
+                                                <span id="course_list_SPAN_34">2</span><span id="course_list_SPAN_35">из</span><span id="course_list_SPAN_36">2</span>
+                                            </div>
+                                        </div>
+                                        <h6 id="course_list_H6_37">
+                                            <span id="course_list_SPAN_38">Правильных ответов</span>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <%}%>
+
+        </script>
+
+        <script type="text/template" id="CCourseDetailsTemplate">
+
+            <div id="course_details_DIV_1">
+                <div id="course_details_DIV_2">
+                    <!--<div id="course_details_DIV_3">
+                        <i id="course_details_I_4">arrow_back</i><span id="course_details_SPAN_5">Модуль</span>
+                    </div>-->
+                </div>
+                <section id="course_details_SECTION_6">
+                    <div id="course_details_DIV_7">
+                        <div id="course_details_DIV_8">
+                            <div id="course_details_DIV_9">
+                                <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Y2hlY2tfZ3JlZW48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY2Ni4wMDAwMDAsIC00NDIuMDAwMDAwKSIgZmlsbD0iIzczQTQ0MSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2NoZWNrX2NpcmNsZV9ibGFja18yNHB4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjY2LjAwMDAwMCwgNDQyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLDAgQzQuNDgsMCAwLDQuNDggMCwxMCBDMCwxNS41MiA0LjQ4LDIwIDEwLDIwIEMxNS41MiwyMCAyMCwxNS41MiAyMCwxMCBDMjAsNC40OCAxNS41MiwwIDEwLDAgWiBNOSwxNC40MiBMNCw5LjQyIEw1LjQxLDguMDEgTDksMTEuNTkgTDE0LjU5LDYgTDE2LDcuNDIgTDksMTQuNDIgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" height="20" id="course_details_IMG_10" alt='' /><span id="course_details_SPAN_11">Пройден</span>
+                            </div>
+                        </div>
+                        <div id="course_details_DIV_12">
+                            <div id="course_details_DIV_13">
+                                <img src="../../../images/lessons_blue.svg" height="24" id="course_details_IMG_14" alt='' /><span id="course_details_SPAN_15">Модуль .01</span>
+                            </div>
+                            <div id="course_details_DIV_16">
+                                <img src="../../../images/modul_blue.svg" height="24" id="course_details_IMG_17" alt='' /><span id="course_details_SPAN_18">1 урок</span>
+                            </div>
+                            <div id="course_details_DIV_19">
+                                <div id="course_details_DIV_20">
+                                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDUwICg1NDk4MykgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+Y2hlY2tfZ3JlZW48L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iVUktS0lUIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iYmMtdWkta2l0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY2Ni4wMDAwMDAsIC00NDIuMDAwMDAwKSIgZmlsbD0iIzczQTQ0MSIgZmlsbC1ydWxlPSJub256ZXJvIj4KICAgICAgICAgICAgPGcgaWQ9ImljX2NoZWNrX2NpcmNsZV9ibGFja18yNHB4IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNjY2LjAwMDAwMCwgNDQyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTEwLDAgQzQuNDgsMCAwLDQuNDggMCwxMCBDMCwxNS41MiA0LjQ4LDIwIDEwLDIwIEMxNS41MiwyMCAyMCwxNS41MiAyMCwxMCBDMjAsNC40OCAxNS41MiwwIDEwLDAgWiBNOSwxNC40MiBMNCw5LjQyIEw1LjQxLDguMDEgTDksMTEuNTkgTDE0LjU5LDYgTDE2LDcuNDIgTDksMTQuNDIgWiIgaWQ9IlNoYXBlIj48L3BhdGg+CiAgICAgICAgICAgIDwvZz4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" height="20" id="course_details_IMG_21" alt='' /><span id="course_details_SPAN_22">Пройден</span>
+                                </div>
+                            </div>
+                            <div id="course_details_DIV_23">
+                            </div>
+                            <div id="course_details_DIV_24">
+                                <img src="../../../images/alarm_blue.svg" height="24" id="course_details_IMG_25" alt='' /><span id="course_details_SPAN_26">5 мин</span>
+                            </div>
+                        </div><span id="course_details_SPAN_27"><%=data.courseDto.title%></span><span id="course_details_SPAN_28"><%=data.courseDto.description%></span><span id="course_details_SPAN_29"></span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="container width_946">
+
+                <div class="video_wrapper">
+                    <iframe width="1019" height="573" src="https://www.youtube.com/embed/syX3h58ZA3c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </script>
+
+
+
+
+
+
+
+		<!-- Scripts -->
+			<script src="style/assets/js/jquery.min.js"></script>
+			<script src="style/assets/js/jquery.scrolly.min.js"></script>
+			<script src="style/assets/js/skel.min.js"></script>
+			<script src="style/assets/js/skel-viewport.min.js"></script>
+			<script src="style/assets/js/util.js"></script>
+			<!--[if lte IE 8]>
+		    <script src="style/assets/js/ie/respond.min.js"></script><![endif]-->
+
+            <script src="/style/js/lodash.min.js"></script>
+            <script src="/style/js/componentsCore.js"></script>
+            <script src="/style/js/components.min.js"></script>
+            <script src="/style/js/utils.js"></script>
+            <script src="/style/js/routing.js"></script>
+            <script src="/style/js/app.js"></script>
+
+
+			<script src="/style/assets/js/main.js"></script>
+
+
+
+
+	</body>
+</html>
